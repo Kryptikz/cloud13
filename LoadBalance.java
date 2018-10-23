@@ -13,7 +13,7 @@ public class LoadBalance implements Runnable {
             }
             ss = new ServerSocket(53135);
         } catch (Exception e) {
-            System.out.println("ERROR ESTABLISHING SERVER: " + e.toString());   
+            System.out.println("ERROR ESTABLISHING LOAD BALANCE SERVER: " + e.toString());   
         }
         run();
     }
