@@ -3,10 +3,10 @@ public class NodeData{
     ArrayList<String> fileNames;
     String ip;
     Boolean isOnline;
-    //ArrayList<Block> data;
+    ArrayList<Block> data;
     public NodeData(String IP){
         fileNames = new ArrayList<String>();
-        //data = new ArrayList<Block>();
+        data = new ArrayList<Block>();
         ip = IP;
         isOnline = true;
     }

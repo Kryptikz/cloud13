@@ -24,9 +24,9 @@ public class NodeManager implements Runnable{
             }
             //waits for a connection
             nodes.add(new NodeData(s.getInetAddress().toString()));
-            //adds the new node to the array of node data
-            //(new Thread(new NodeManagerThread(s))).start();
-            //starts a new thread
+            //adds the new node to the array of node data 
+            (new Thread(new NodeManagerThread(s,nodes.get(nodes.size()-1)))).start();
+            //starts a new thread of NodeManagerThread
         }
     }
 }
